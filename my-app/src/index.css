@@ -16,10 +16,8 @@ body {
 
 .header {
   display: flex;
-  justify-content: center; /* makes the header and buttons stay at either end */
-  align-items: center; /* makes the shelfbook header stay inside of the header */
-
-
+  justify-content: center; 
+  align-items: center; 
 }
 
 h1 {
@@ -36,7 +34,6 @@ h1 {
 }
 
 .container {
-  /* background: rgb(229, 241, 255); */
   height: 100%;
   margin: 0;
   display: flex;
@@ -87,7 +84,6 @@ ol, ul {
   border: 1px solid #999;
   float: left;
   color: rgb(56, 56, 56);
-  /* font-family: sans-serif; */
   font-size: 100px;
   line-height: 34px;
   height: 10rem;
@@ -101,7 +97,6 @@ ol, ul {
 .square:hover {
   background: rgb(235, 235, 235);
   cursor: pointer;
-  /* color: #fff; */
 }
 
 .square:focus {
@@ -122,14 +117,21 @@ ol, ul {
   width: 200px;
 }
 
-.board {
-  /* margin: auto; */
+.status {
+  font-size: 20px;
+  text-align: center;
+}
+
+#game-finished {
+  font-weight: bold;
+  font-size: 30px;
+  color:rgb(60, 253, 102);
 }
 
 #bold-button {
   font-weight: bold;
 }
 
-/* .container div { border: 1px red solid;} */
-
-
+.square.highlight {
+  background: rgba(60, 253, 60, 0.664);
+}
